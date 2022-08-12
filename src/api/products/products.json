@@ -1,0 +1,11 @@
+[{
+"productId": 2,
+"productName":"Product1",
+"productCode":"TBX-4213",
+"releaseDate":"02.04.2023",
+"description":"Description Test",
+"price":8.9,
+"starRating":3.5,
+"imageUrl":"https://ps.w.org/image-comparison/assets/icon-256x256.png?rev=2587037"
+}
+  ]
