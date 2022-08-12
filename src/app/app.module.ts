@@ -10,6 +10,7 @@ import {StarComponent} from "./star/star.component";
 import {HttpClientModule} from "@angular/common/http";
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { HomeComponent } from './home/home.component';
+import {NumberGuard} from "./product-details/number.guard";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { HomeComponent } from './home/home.component';
     RouterModule.forRoot([
       {path: "products",component: ProductLitComponent},
       {path: "home",component: HomeComponent},
-      {path: "products/:id",component: ProductDetailsComponent},
+      {path: "products/:id",canActivate:[NumberGuard], component: ProductDetailsComponent},
       {path:"",component:ProductLitComponent},
       {path:"**",redirectTo:"products",pathMatch:"full"}
     ])
